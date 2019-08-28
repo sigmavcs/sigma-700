@@ -32,12 +32,12 @@
         },
         "triggers": [
           {
-            "resourceName": "apigusEast1apiapiany",
-            "config": {}
-          },
-          {
-            "resourceName": "cwerule",
-            "config": {}
+            "resourceName": "s3s3Bucket",
+            "config": {
+              "type": "s3:ObjectCreated:*",
+              "keyPrefix": "",
+              "keySuffix": ""
+            }
           }
         ]
       }
@@ -49,23 +49,15 @@
     ],
     "currentFileId": "8ed5a4b4-0b5d-42b8-9fa1-a6a8022d22a8",
     "resources": {
-      "apigusEast1apiapiany": {
-        "name": "apigusEast1apiapiany",
-        "type": "API_GATEWAY",
+      "s3s3Bucket": {
+        "name": "s3s3Bucket",
+        "type": "S3",
         "config": {
-          "selectedRegion": "us-east-1",
-          "apiMode": 0,
-          "apiName": "api",
-          "endpointType": "EDGE",
-          "resourceMode": 0,
-          "resourceName": "api",
-          "resourcePath": "/api",
-          "restMethod": "ANY",
-          "proxyIntegration": false,
-          "enableCORS": false,
-          "stageMode": 0,
-          "stageName": "Prod",
-          "mode": 0
+          "mode": 0,
+          "bucket": {
+            "region": "us-east-1",
+            "name": "s3-bucket"
+          }
         }
       },
       "cwerule": {
@@ -76,17 +68,6 @@
           "name": "rule",
           "description": "",
           "scheduleExpression": "rate(1 minute)"
-        }
-      },
-      "s3s3Bucket": {
-        "name": "s3s3Bucket",
-        "type": "S3",
-        "config": {
-          "mode": 0,
-          "bucket": {
-            "region": "us-east-1",
-            "name": "s3-bucket"
-          }
         }
       }
     },
