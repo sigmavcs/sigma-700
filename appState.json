@@ -34,6 +34,10 @@
           {
             "resourceName": "apigusEast1apiapiany",
             "config": {}
+          },
+          {
+            "resourceName": "cwerule",
+            "config": {}
           }
         ]
       }
@@ -45,17 +49,6 @@
     ],
     "currentFileId": "8ed5a4b4-0b5d-42b8-9fa1-a6a8022d22a8",
     "resources": {
-      "s3s3Bucket": {
-        "name": "s3s3Bucket",
-        "type": "S3",
-        "config": {
-          "mode": 0,
-          "bucket": {
-            "region": "us-east-1",
-            "name": "s3-bucket"
-          }
-        }
-      },
       "apigusEast1apiapiany": {
         "name": "apigusEast1apiapiany",
         "type": "API_GATEWAY",
@@ -73,6 +66,27 @@
           "stageMode": 0,
           "stageName": "Prod",
           "mode": 0
+        }
+      },
+      "cwerule": {
+        "name": "cwerule",
+        "type": "CLOUD_WATCH",
+        "config": {
+          "mode": 0,
+          "name": "rule",
+          "description": "",
+          "scheduleExpression": "rate(1 minute)"
+        }
+      },
+      "s3s3Bucket": {
+        "name": "s3s3Bucket",
+        "type": "S3",
+        "config": {
+          "mode": 0,
+          "bucket": {
+            "region": "us-east-1",
+            "name": "s3-bucket"
+          }
         }
       }
     },
