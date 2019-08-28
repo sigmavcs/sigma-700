@@ -1,0 +1,77 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "ccedff46-7d72-41fd-ba0e-a4681aa99e13": {
+        "id": "ccedff46-7d72-41fd-ba0e-a4681aa99e13",
+        "parent": null,
+        "name": "sigma-700",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "8ed5a4b4-0b5d-42b8-9fa1-a6a8022d22a8"
+        ],
+        "isRemovable": false,
+        "filePath": "sigma-700"
+      },
+      "8ed5a4b4-0b5d-42b8-9fa1-a6a8022d22a8": {
+        "id": "8ed5a4b4-0b5d-42b8-9fa1-a6a8022d22a8",
+        "parent": "ccedff46-7d72-41fd-ba0e-a4681aa99e13",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "sigma-700/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "ccedff46-7d72-41fd-ba0e-a4681aa99e13",
+    "openFiles": [
+      "8ed5a4b4-0b5d-42b8-9fa1-a6a8022d22a8"
+    ],
+    "currentFileId": "8ed5a4b4-0b5d-42b8-9fa1-a6a8022d22a8",
+    "resources": {},
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "sigma-700",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1566979992950
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "sigma-700",
+      "url": "https://github.com/sigmavcs/sigma-700"
+    }
+  }
+}
