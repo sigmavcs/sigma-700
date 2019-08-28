@@ -32,12 +32,8 @@
         },
         "triggers": [
           {
-            "resourceName": "s3s3Bucket",
-            "config": {
-              "type": "s3:ObjectCreated:*",
-              "keyPrefix": "",
-              "keySuffix": ""
-            }
+            "resourceName": "apigusEast1apiapiany",
+            "config": {}
           }
         ]
       }
